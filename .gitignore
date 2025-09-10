@@ -1,4 +1,4 @@
-venv-evalai/
+venv-evalai/Lib
 __pycache__/
 *.pyc
 node_modules/
