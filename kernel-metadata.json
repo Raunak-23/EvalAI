@@ -1,0 +1,12 @@
+{
+  "id": "raunakp03/ocr-gpu-runner",
+  "title": "OCR GPU runner",
+  "code_file": "ML/ocr/msTrOCR.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}

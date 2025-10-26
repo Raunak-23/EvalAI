@@ -1,0 +1,52 @@
+{
+  "student_info": {
+    "name": "Raunak Pal",
+    "registration_number": "23MID0045",
+    "course_code": "CSI3001"
+  },
+  "answers": [
+    {
+      "question_number": 1,
+      "marks_awarded": 10.0,
+      "max_marks": 10.0,
+      "justification": "Correctly identified all 5 NIST Cloud Computing Reference Architecture components and accurately mapped each entity from the scenario to its corresponding role with clear explanations and a relevant diagram."
+    },
+    {
+      "question_number": 2,
+      "marks_awarded": 10.0,
+      "max_marks": 10.0,
+      "justification": "Correctly identified Hybrid Cloud as the most appropriate model and provided a comprehensive, well-reasoned justification addressing all scenario requirements (scalability, privacy, security, resources) with a relevant diagram."
+    },
+    {
+      "question_number": 3,
+      "marks_awarded": 10.0,
+      "max_marks": 10.0,
+      "justification": "Correctly identified SaaS as the most suitable service model, providing strong, relevant justifications aligned with the institution's functional needs and ease of implementation. Included a good comparative analysis with PaaS."
+    },
+    {
+      "question_number": 4,
+      "marks_awarded": 9.0,
+      "max_marks": 10.0,
+      "justification": "Elaborated well on System-level and Process-level virtualization with accurate diagrams. Also covered CPU and Memory virtualization effectively. I/O virtualization explanation was slightly less detailed, particularly for 'Direct' type."
+    },
+    {
+      "question_number": 5,
+      "marks_awarded": 3.0,
+      "max_marks": 5.0,
+      "justification": "For part (i), the Shortest Job First (SJF) principle was correctly applied for task sorting and assignment. However, there were arithmetic errors in calculating the total waiting time and average waiting time."
+    },
+    {
+      "question_number": 5,
+      "marks_awarded": 5.0,
+      "max_marks": 5.0,
+      "justification": "For part (ii), the MIN-MIN scheduling algorithm was correctly applied step-by-step, leading to accurate task assignments, a correct Gantt chart, and the correct overall execution time (makespan)."
+    }
+  ],
+  "conceptual_weaknesses": [
+    "Arithmetic precision in numerical calculations.",
+    "Less detailed understanding of all sub-types of I/O virtualization."
+  ],
+  "common_mistakes": [
+    "Calculation errors in numerical problems (e.g., summing waiting times)."
+  ]
+}
