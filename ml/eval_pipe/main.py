@@ -1,5 +1,7 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.responses import JSONResponse
+from fastapi import Depends, Header
+from typing import Optional
 import tempfile
 import os
 from dotenv import load_dotenv
@@ -14,6 +16,13 @@ app = FastAPI(
     version="1.0"
 )
 
+API_KEY = os.getenv("ML_API_KEY")
+
+def verify_key(x_api_key: Optional[str] = Header(None)):
+    if x_api_key is None:
+        raise HTTPException(status_code=401, detail="Missing X-API-Key header")
+    if x_api_key != API_KEY:
+        raise HTTPException(status_code=401, detail="Invalid API key")
 @app.get("/")
 def home():
     return {"message": "Welcome to EvalAI Grading API. Use /docs to test the API."}
@@ -21,7 +30,8 @@ def home():
 @app.post("/grade")
 async def grade_pdfs(
     student_pdf: UploadFile = File(..., description="Student answer sheet PDF"),
-    qp_or_key_pdf: UploadFile = File(..., description="Question paper or key PDF")
+    qp_or_key_pdf: UploadFile = File(..., description="Question paper or key PDF"),
+    _: None = Depends(verify_key)
 ):
     """
     Accepts two PDFs → Runs Gemini-based grading → Returns JSON result.

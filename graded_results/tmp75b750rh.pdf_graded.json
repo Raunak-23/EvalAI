@@ -1,0 +1,45 @@
+{
+  "student_info": {
+    "name": "Raunak Pal",
+    "registration_number": "23MID0045",
+    "course_code": "CSI3001"
+  },
+  "answers": [
+    {
+      "question_number": 1,
+      "marks_awarded": 10.0,
+      "max_marks": 10.0,
+      "justification": "The student correctly identified all five components of the NIST Cloud Computing Reference Architecture. Each component was accurately defined and correctly mapped to the corresponding entity in the given scenario. The answer is complete and demonstrates a clear understanding of the model."
+    },
+    {
+      "question_number": 2,
+      "marks_awarded": 10.0,
+      "max_marks": 10.0,
+      "justification": "The student correctly identified the hybrid cloud model as the most appropriate solution. The justification is excellent, clearly outlining the pros and cons of public and private clouds and applying them to the specific needs of the healthcare startup (scalability vs. data privacy). The suggestion to use the public cloud for non-sensitive tasks and the private cloud for sensitive patient data is conceptually sound."
+    },
+    {
+      "question_number": 3,
+      "marks_awarded": 10.0,
+      "max_marks": 10.0,
+      "justification": "The student correctly recommended the SaaS model based on the requirement for ease of implementation. The justification is well-reasoned, highlighting key benefits like managed infrastructure, cost savings, and scalability. The answer also shows deeper understanding by contrasting SaaS with PaaS, explaining the trade-offs accurately."
+    },
+    {
+      "question_number": 4,
+      "marks_awarded": 8.0,
+      "max_marks": 10.0,
+      "justification": "The student provided a good explanation of system-level and process-level virtualization, supported by correct diagrams. The descriptions of CPU and Memory virtualization are also detailed and accurate. However, the section on I/O virtualization is incomplete, as it only lists the types (Full, Para, Direct) without any explanation, which prevents awarding full marks."
+    },
+    {
+      "question_number": 5,
+      "marks_awarded": 9.0,
+      "max_marks": 10.0,
+      "justification": "For part (i), the student correctly applied the Shortest Job First (SJF) algorithm, sorted the tasks, and calculated individual waiting times correctly. However, a minor calculation error was made when summing these to find the total waiting time (calculated 5.4s instead of the correct 6.4s). For part (ii), the student correctly applied the MIN-MIN algorithm, determined the optimal task allocation, and correctly calculated the overall execution time (makespan) as 7s. The error in part (i) leads to a small deduction."
+    }
+  ],
+  "conceptual_weaknesses": [
+    "I/O Virtualization: The student listed the types but did not elaborate on their mechanisms or differences, indicating an incomplete understanding of this specific topic."
+  ],
+  "common_mistakes": [
+    "Calculation errors: A minor arithmetic mistake was made in summing up values in question 5(i)."
+  ]
+}
